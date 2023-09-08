@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +13,7 @@ namespace EmployeeWageProblem
             Random randomNumber = new Random();
             int randomNum = randomNumber.Next(0, 3);
             return randomNum;
-        }
+        } 
 
         public const int IS_FULL_TIME = 1;
         public const int IS_PART_TIME = 2;
