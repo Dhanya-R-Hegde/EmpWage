@@ -141,6 +141,11 @@
             UserCase9 adobe = new UserCase9("Adobe", 20, 2, 10);
             adobe.UC9();
             Console.WriteLine(adobe.toString());
+
+            UserCase10 userCase10 = new UserCase10();
+            userCase10.addCompanyEmpWage("Adobe", 20, 2, 10);
+            userCase10.addCompanyEmpWage("Amazon", 10, 4, 20);
+            userCase10.computeEmpWage();
         }
     }
 }
