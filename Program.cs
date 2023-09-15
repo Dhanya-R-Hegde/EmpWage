@@ -146,6 +146,12 @@
             userCase10.addCompanyEmpWage("Adobe", 20, 2, 10);
             userCase10.addCompanyEmpWage("Amazon", 10, 4, 20);
             userCase10.computeEmpWage();
+
+            UserCase11ToUserCase14 userCase11ToUserCase14 = new UserCase11ToUserCase14();
+            userCase11ToUserCase14.addCompanyEmpWage("Adobe", 20, 2, 10);
+            userCase11ToUserCase14.addCompanyEmpWage("Amazon", 10, 4, 20);
+            userCase11ToUserCase14.computeEmpWage();
+            Console.WriteLine("Total wage for Adobe company : " + userCase11ToUserCase14.getTotalWage("Adobe"));
         }
     }
 }
