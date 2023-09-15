@@ -39,12 +39,24 @@
             Console.WriteLine("Employee Daily Wage is : " + empWage);
         }
 
+        static void UC3() //Check daily employee wage also for part time employee
+        {
+            if (empCheck == IS_FULL_TIME)
+                empHrs = 8;
+            else if (empCheck == IS_PART_TIME)
+                empHrs = 4;
+            else
+                empHrs = 0;
 
+            empWage = empHrs * EMP_RATE_PER_HOUR;
+            Console.WriteLine("Employee Daily Wage is : " + empWage);
+        }
 
         static void Main(string[] args)
         {
             UC1();
             UC2();
+            UC3();
 
         }
     }
