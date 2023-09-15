@@ -137,6 +137,10 @@
             UC5();
             UC6();
             UC8("Adobe");
+
+            UserCase9 adobe = new UserCase9("Adobe", 20, 2, 10);
+            adobe.UC9();
+            Console.WriteLine(adobe.toString());
         }
     }
 }
