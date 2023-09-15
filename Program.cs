@@ -52,12 +52,25 @@
             Console.WriteLine("Employee Daily Wage is : " + empWage);
         }
 
+        static void UC4() //Check daily employee wage using switch case
+        {
+            switch (empCheck)
+            {
+                case IS_FULL_TIME: empHrs = 8; break;
+                case IS_PART_TIME: empHrs = 4; break;
+                default: empHrs = 0; break;
+            }
+
+            empWage = empHrs * EMP_RATE_PER_HOUR;
+            Console.WriteLine("Employee Daily Wage is : " + empWage);
+        }
+
         static void Main(string[] args)
         {
             UC1();
             UC2();
             UC3();
-
+            UC4();
         }
     }
 }
