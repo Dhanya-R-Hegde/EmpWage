@@ -84,6 +84,29 @@
             Console.WriteLine("Total monthly employee wage is : " + totalEmpWage);
         }
 
+        static void UC6() //Calculate wages for a month having 20 working days or for total working hours of 100
+        {
+            int totalEmpHours = 0, totalWorkingDays = 0;
+
+            while (totalEmpHours <= MAX_HOURS_IN_MONTH && totalWorkingDays <= NUM_OF_WORKING_DAYS)
+            {
+                totalWorkingDays++;
+
+                switch (empCheck)
+                {
+                    case IS_FULL_TIME: empHrs = 8; break;
+                    case IS_PART_TIME: empHrs = 4; break;
+                    default: empHrs = 0; break;
+                }
+
+                totalEmpHours += empHrs;
+                Console.WriteLine("Day : " + totalWorkingDays + "  Emloyee Hours : " + empHrs);
+            }
+            totalEmpWage = totalEmpHours * EMP_RATE_PER_HOUR;
+            Console.WriteLine("Total employee wage is : " + totalEmpWage);
+        }
+
+
         static void Main(string[] args)
         {
             UC1();
@@ -91,6 +114,7 @@
             UC3();
             UC4();
             UC5();
+            UC6();
         }
     }
 }
